@@ -1,0 +1,17 @@
+server:
+    port: 8762
+spring:
+  application:
+    name: zuul-service
+zuul:
+  ignoredServices: '*'
+  routes:
+    users:
+      path: /user-api/**
+      serviceId: user-service
+    products:
+      path: /product-api/**
+      serviceId: productcategory-service
+    categories:
+      path: /category-api/**
+      serviceId: productcategory-service
