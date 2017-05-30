@@ -1,0 +1,6 @@
+version: '2'
+services:
+  eureka:
+    build: .
+    ports:
+     - "8762:8762"
