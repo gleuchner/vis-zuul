@@ -1,0 +1,13 @@
+server:
+    port: 8762
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    productcategory-service: /**
