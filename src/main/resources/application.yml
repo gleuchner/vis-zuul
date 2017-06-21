@@ -16,3 +16,4 @@ zuul:
       path: /category-api/**
       serviceId: productcategory-service
     productcategory-service: /**
+  sensitive-headers:
