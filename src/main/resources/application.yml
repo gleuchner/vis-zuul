@@ -17,3 +17,12 @@ zuul:
       serviceId: productcategory-service
     productcategory-service: /**
   sensitive-headers:
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
